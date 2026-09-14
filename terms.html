@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-legal-page="terms" class="terms-page">
   <head>
     <meta charset="utf-8" />
     <meta
@@ -14,10 +14,11 @@
     <meta name="theme-color" content="#fbf6fa" />
     <link rel="icon" type="image/png" href="./assets/heartsy_app_mark.png" />
     <link rel="apple-touch-icon" href="./assets/heartsy_app_mark.png" />
-    <link rel="stylesheet" href="./styles.css?v=2" />
+    <link rel="stylesheet" href="./styles.css?v=5" />
+    <script src="./legal-language.js?v=1" defer></script>
   </head>
   <body>
-    <a class="skip" href="#content">Skip to content</a>
+    <a class="skip" href="#content" data-i18n="m0">Skip to content</a>
     <div class="hairline" aria-hidden="true"></div>
     <header class="site-header">
       <div class="wrap header-inner">
@@ -32,9 +33,9 @@
           <span class="name">Heartsy</span>
         </a>
         <nav class="nav" aria-label="Legal">
-          <a href="./privacy.html">Privacy</a>
-          <a href="./terms.html" aria-current="page">Terms</a>
-          <a href="./support.html">Support</a>
+          <a href="./privacy.html" data-i18n="m1">Privacy</a>
+          <a href="./terms.html" aria-current="page" data-i18n="m2">Terms</a>
+          <a href="./support.html" data-i18n="m3">Support</a>
         </nav>
       </div>
     </header>
@@ -42,14 +43,24 @@
     <main id="content">
       <section class="hero">
         <div class="wrap">
-          <h1>Terms of Use</h1>
-          <p>
+          <div class="language-control" hidden>
+            <label for="legal-language">Language</label>
+            <select id="legal-language" name="lang">
+              <option value="en" lang="en">English</option>
+              <option value="de" lang="de">Deutsch</option>
+              <option value="es" lang="es">Español</option>
+              <option value="fr" lang="fr">Français</option>
+              <option value="pt-BR" lang="pt-BR">Português (Brasil)</option>
+            </select>
+          </div>
+          <h1 data-i18n="m83">Terms of Use</h1>
+          <p data-i18n="m84">
             These Terms govern your access to and use of Heartsy, including
             the app and these pages.
           </p>
           <div class="meta">
-            <span>Last updated September 11, 2026</span>
-            <span>Contact support@heartsyapp.com</span>
+            <span data-i18n="m6">Last updated September 11, 2026</span>
+            <span data-i18n="m7">Contact support@heartsyapp.com</span>
           </div>
         </div>
       </section>
@@ -57,230 +68,230 @@
       <section class="wrap doc-page">
         <div class="doc">
           <details class="toc toc-mobile">
-            <summary>On this page</summary>
-            <a href="#agreement">Agreement</a>
-            <a href="#service">The service</a>
-            <a href="#eligibility">Eligibility and accounts</a>
-            <a href="#couple">Couple features</a>
-            <a href="#content">Your content</a>
-            <a href="#conduct">Acceptable use</a>
-            <a href="#privacy">Privacy</a>
-            <a href="#availability">Availability</a>
-            <a href="#ending">Suspension and ending</a>
-            <a href="#legal">Disclaimers and liability</a>
-            <a href="#changes">Changes</a>
-            <a href="#contact">Contact</a>
+            <summary data-i18n="m8">On this page</summary>
+            <a href="#agreement" data-i18n="m85">Agreement</a>
+            <a href="#service" data-i18n="m86">The service</a>
+            <a href="#eligibility" data-i18n="m87">Eligibility and accounts</a>
+            <a href="#couple" data-i18n="m88">Couple features</a>
+            <a href="#content" data-i18n="m89">Your content</a>
+            <a href="#conduct" data-i18n="m90">Acceptable use</a>
+            <a href="#privacy" data-i18n="m1">Privacy</a>
+            <a href="#availability" data-i18n="m91">Availability</a>
+            <a href="#ending" data-i18n="m92">Suspension and ending</a>
+            <a href="#legal" data-i18n="m93">Disclaimers and liability</a>
+            <a href="#changes" data-i18n="m18">Changes</a>
+            <a href="#contact" data-i18n="m19">Contact</a>
           </details>
 
           <aside class="toc toc-desktop" aria-label="On this page">
-            <p>On this page</p>
-            <a href="#agreement">Agreement</a>
-            <a href="#service">The service</a>
-            <a href="#eligibility">Eligibility and accounts</a>
-            <a href="#couple">Couple features</a>
-            <a href="#content">Your content</a>
-            <a href="#conduct">Acceptable use</a>
-            <a href="#privacy">Privacy</a>
-            <a href="#availability">Availability</a>
-            <a href="#ending">Suspension and ending</a>
-            <a href="#legal">Disclaimers and liability</a>
-            <a href="#changes">Changes</a>
-            <a href="#contact">Contact</a>
+            <p data-i18n="m8">On this page</p>
+            <a href="#agreement" data-i18n="m85">Agreement</a>
+            <a href="#service" data-i18n="m86">The service</a>
+            <a href="#eligibility" data-i18n="m87">Eligibility and accounts</a>
+            <a href="#couple" data-i18n="m88">Couple features</a>
+            <a href="#content" data-i18n="m89">Your content</a>
+            <a href="#conduct" data-i18n="m90">Acceptable use</a>
+            <a href="#privacy" data-i18n="m1">Privacy</a>
+            <a href="#availability" data-i18n="m91">Availability</a>
+            <a href="#ending" data-i18n="m92">Suspension and ending</a>
+            <a href="#legal" data-i18n="m93">Disclaimers and liability</a>
+            <a href="#changes" data-i18n="m18">Changes</a>
+            <a href="#contact" data-i18n="m19">Contact</a>
           </aside>
 
           <article class="prose">
-            <p>
+            <p data-i18n="m94">
               By creating an account, signing in, or using Heartsy, you agree
               to these Terms. If you do not agree, do not use the app. English
               is the governing language of these Terms.
             </p>
 
-            <h2 id="agreement">Agreement</h2>
-            <p>
+            <h2 id="agreement" data-i18n="m85">Agreement</h2>
+            <p data-i18n="m95">
               These Terms are an agreement between you and the operator of
               Heartsy. They apply to everyone who uses the app or these
               pages.
             </p>
 
-            <h2 id="service">The service</h2>
-            <p>
+            <h2 id="service" data-i18n="m86">The service</h2>
+            <p data-i18n="m96">
               Heartsy is a private space for two people who are already
               together. It is not a public community or a way to meet
               strangers. Features include:
             </p>
             <ul>
-              <li>Email or Sign in with Apple, and a profile with nickname, birthday, gender, and photo</li>
-              <li>Pairing with an invite code. Before accept, the other person can see your avatar and nickname. After accept, you share one space. Only one active relationship at a time</li>
-              <li>Home, with both avatars, names, days together, a note when one exists, and the latest moment</li>
-              <li>Notes: one short message left for your partner, shown only on home</li>
-              <li>Chat: one conversation between the two of you, with text, one photo, or one location snapshot. Location is not live tracking. There is no voice, read receipt, or message recall</li>
-              <li>Moments: your own posts with text, one photo, or both. You can delete your own posts. There are no likes, comments, or multi-photo posts</li>
-              <li>Us: profile, together date, notifications, unbind, safety report, and account deletion</li>
+              <li data-i18n="m97">Email or Sign in with Apple, and a profile with nickname, birthday, gender, and photo</li>
+              <li data-i18n="m98">Pairing with an invite code. Before accept, the other person can see your avatar and nickname. After accept, you share one space. Only one active relationship at a time</li>
+              <li data-i18n="m99">Home, with both avatars, names, days together, a note when one exists, and the latest moment</li>
+              <li data-i18n="m100">Notes: one short message left for your partner, shown only on home</li>
+              <li data-i18n="m101">Chat: one conversation between the two of you, with text, one photo, or one location snapshot. Location is not live tracking. There is no voice, read receipt, or message recall</li>
+              <li data-i18n="m102">Moments: your own posts with text, one photo, or both. You can delete your own posts. There are no likes, comments, or multi-photo posts</li>
+              <li data-i18n="m103">Us: profile, together date, notifications, unbind, safety report, and account deletion</li>
             </ul>
-            <p>
+            <p data-i18n="m104">
               Until you pair, you can only complete your profile and send an
               invite. We may add, change, suspend, or remove features at any
               time.
             </p>
 
-            <h2 id="eligibility">Eligibility and accounts</h2>
-            <p>
+            <h2 id="eligibility" data-i18n="m87">Eligibility and accounts</h2>
+            <p data-i18n="m105">
               You must be at least 18 years old to use Heartsy. By using the
               app, you confirm that you meet this requirement.
             </p>
-            <p>You agree that:</p>
+            <p data-i18n="m106">You agree that:</p>
             <ul>
-              <li>The information you provide is accurate</li>
-              <li>You will keep your login details secure</li>
-              <li>You are responsible for activity on your account</li>
-              <li>You will not sell, lend, or share your account</li>
-              <li>
+              <li data-i18n="m107">The information you provide is accurate</li>
+              <li data-i18n="m108">You will keep your login details secure</li>
+              <li data-i18n="m109">You are responsible for activity on your account</li>
+              <li data-i18n="m110">You will not sell, lend, or share your account</li>
+              <li data-i18n="m111">
                 You will tell us if you think someone used your account
                 without permission
               </li>
             </ul>
 
-            <h2 id="couple">Couple features</h2>
-            <p>
+            <h2 id="couple" data-i18n="m88">Couple features</h2>
+            <p data-i18n="m112">
               You can invite one person with an invite code. Codes can be
               copied, shared, invalidated, or replaced. Only one active
               relationship is allowed at a time.
             </p>
-            <p>If both of you accept:</p>
+            <p data-i18n="m113">If both of you accept:</p>
             <ul>
-              <li>
+              <li data-i18n="m114">
                 You share one space. Notes, chat, moments, and home details
                 in that relationship are visible to both of you
               </li>
-              <li>
+              <li data-i18n="m115">
                 You are responsible for what you choose to send or post
               </li>
             </ul>
-            <p>
+            <p data-i18n="m116">
               Unbinding ends that relationship and closes its shared space.
               Content from the old relationship does not move into a new one.
               Deleting your account deletes your account; it is not the same
               as unbinding.
             </p>
 
-            <h2 id="content">Your content</h2>
-            <p>
+            <h2 id="content" data-i18n="m89">Your content</h2>
+            <p data-i18n="m117">
               You keep ownership of the text, photos, notes, and other
               materials you submit ("User Content").
             </p>
-            <p>
+            <p data-i18n="m118">
               You grant us a non-exclusive, worldwide, royalty-free license to
               host, store, process, display, and transmit that content only as
               needed to operate Heartsy for you and anyone you share with in
               the app.
             </p>
-            <p>
+            <p data-i18n="m119">
               You are responsible for your User Content and for having the
               rights to upload it. Do not submit content that is illegal,
               infringing, abusive, sexually exploitative, or that includes
               someone else's personal information without permission.
             </p>
 
-            <h2 id="conduct">Acceptable use</h2>
-            <p>You agree not to:</p>
+            <h2 id="conduct" data-i18n="m90">Acceptable use</h2>
+            <p data-i18n="m120">You agree not to:</p>
             <ul>
-              <li>Use Heartsy for any illegal or unauthorized purpose</li>
-              <li>Harass, stalk, threaten, or harm another person</li>
-              <li>Impersonate someone else or misrepresent a relationship</li>
-              <li>Attempt to access another account or our systems</li>
-              <li>Interfere with the app or circumvent security</li>
-              <li>
+              <li data-i18n="m121">Use Heartsy for any illegal or unauthorized purpose</li>
+              <li data-i18n="m122">Harass, stalk, threaten, or harm another person</li>
+              <li data-i18n="m123">Impersonate someone else or misrepresent a relationship</li>
+              <li data-i18n="m124">Attempt to access another account or our systems</li>
+              <li data-i18n="m125">Interfere with the app or circumvent security</li>
+              <li data-i18n="m126">
                 Reverse engineer the app except where the law does not allow
                 that restriction
               </li>
             </ul>
-            <p>
+            <p data-i18n="m127">
               We may remove content, limit features, or close accounts that
               violate these Terms.
             </p>
 
-            <h2 id="privacy">Privacy</h2>
-            <p>
+            <h2 id="privacy" data-i18n="m1">Privacy</h2>
+            <p data-i18n="m128">
               Your use of Heartsy is also subject to our
               <a href="./privacy.html">Privacy Policy</a>.
             </p>
 
-            <h2 id="availability">Availability</h2>
-            <p>
+            <h2 id="availability" data-i18n="m91">Availability</h2>
+            <p data-i18n="m129">
               We do not promise that Heartsy will always be available,
               uninterrupted, or error-free. We may perform maintenance,
               release updates, or limit access.
             </p>
-            <p>
+            <p data-i18n="m130">
               Third-party platforms you use to sign in or receive
               notifications have their own terms, and we are not responsible
               for them.
             </p>
 
-            <h2 id="ending">Suspension and ending</h2>
-            <p>We may suspend or end your access if:</p>
+            <h2 id="ending" data-i18n="m92">Suspension and ending</h2>
+            <p data-i18n="m131">We may suspend or end your access if:</p>
             <ul>
-              <li>You violate these Terms</li>
-              <li>Your use creates legal or safety risk</li>
-              <li>We are required to do so by law</li>
+              <li data-i18n="m132">You violate these Terms</li>
+              <li data-i18n="m133">Your use creates legal or safety risk</li>
+              <li data-i18n="m134">We are required to do so by law</li>
             </ul>
-            <p>
+            <p data-i18n="m135">
               You may stop using Heartsy at any time and may delete your
               account in the app. Provisions that should survive, including
               ownership, disclaimers, and limitation of liability, will
               survive.
             </p>
 
-            <h2 id="legal">Disclaimers and liability</h2>
-            <p>
+            <h2 id="legal" data-i18n="m93">Disclaimers and liability</h2>
+            <p data-i18n="m136">
               To the maximum extent permitted by law, Heartsy is provided
               "as is" and "as available," without warranties of any kind.
             </p>
-            <p>To the fullest extent permitted by law:</p>
+            <p data-i18n="m137">To the fullest extent permitted by law:</p>
             <ul>
-              <li>
+              <li data-i18n="m138">
                 We are not liable for indirect, incidental, special,
                 consequential, or punitive damages
               </li>
-              <li>
+              <li data-i18n="m139">
                 We are not liable for loss of data, profits, or goodwill
                 arising from your use of Heartsy
               </li>
-              <li>
+              <li data-i18n="m140">
                 Our total liability for any claim relating to Heartsy will not
                 exceed the amount you paid us for the service in the 12 months
                 before the claim, or USD $50, whichever is greater, unless the
                 law requires otherwise
               </li>
             </ul>
-            <p>
+            <p data-i18n="m141">
               Some places do not allow certain limits, so parts of this
               section may not apply to you.
             </p>
-            <p>
+            <p data-i18n="m142">
               You agree to defend and hold harmless the Heartsy operator from
               claims arising from your use of the app, your User Content, or
               your violation of these Terms or the law.
             </p>
-            <p>
+            <p data-i18n="m143">
               If a part of these Terms cannot be enforced, the rest remains in
               effect. These Terms are governed by the laws that apply to you,
               unless another law is required.
             </p>
 
-            <h2 id="changes">Changes</h2>
-            <p>
+            <h2 id="changes" data-i18n="m18">Changes</h2>
+            <p data-i18n="m144">
               We may revise these Terms. If we make material changes, we may
               provide notice in the app or on these pages. Continued use after
               the update means you accept the revised Terms.
             </p>
 
-            <h2 id="contact">Contact</h2>
-            <p>
+            <h2 id="contact" data-i18n="m19">Contact</h2>
+            <p data-i18n="m145">
               Questions about these Terms can be sent to
               <a href="mailto:support@heartsyapp.com">support@heartsyapp.com</a>.
             </p>
-            <p>
+            <p data-i18n="m146">
               Account help is on the
               <a href="./support.html">Support page</a>.
             </p>
@@ -291,10 +302,10 @@
 
     <footer class="site-footer">
       <div class="wrap footer-inner">
-        <p>Heartsy Terms of Use</p>
+        <p data-i18n="m147">Heartsy Terms of Use</p>
         <div class="footer-links">
-          <a href="./privacy.html">Privacy</a>
-          <a href="./support.html">Support</a>
+          <a href="./privacy.html" data-i18n="m1">Privacy</a>
+          <a href="./support.html" data-i18n="m3">Support</a>
         </div>
       </div>
     </footer>

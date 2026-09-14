@@ -230,6 +230,34 @@ a:hover {
   margin-top: 1rem;
 }
 
+.language-control {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.5rem 0.75rem;
+  margin-bottom: 1rem;
+  color: var(--hush);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.language-control[hidden] {
+  display: none;
+}
+
+.language-control select {
+  max-width: 100%;
+  min-height: 44px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+  cursor: pointer;
+}
+
 .meta span {
   display: inline-flex;
   align-items: center;
@@ -486,16 +514,16 @@ a:hover {
 }
 
 @media (max-width: 719px) {
-  .privacy-page {
+  :is(.privacy-page, .terms-page, .support-page) {
     --header: 0rem;
   }
 
-  .privacy-page .site-header,
-  .privacy-page .hairline {
+  :is(.privacy-page, .terms-page, .support-page) .site-header,
+  :is(.privacy-page, .terms-page, .support-page) .hairline {
     display: none;
   }
 
-  .privacy-page .hero {
+  :is(.privacy-page, .terms-page, .support-page) .hero {
     padding-top: calc(clamp(1.5rem, 5vw, 3.5rem) + var(--safe-top));
   }
 }

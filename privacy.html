@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="privacy-page">
+<html lang="en" data-legal-page="privacy" class="privacy-page">
   <head>
     <meta charset="utf-8" />
     <meta
@@ -14,10 +14,11 @@
     <meta name="theme-color" content="#fbf6fa" />
     <link rel="icon" type="image/png" href="./assets/heartsy_app_mark.png" />
     <link rel="apple-touch-icon" href="./assets/heartsy_app_mark.png" />
-    <link rel="stylesheet" href="./styles.css?v=4" />
+    <link rel="stylesheet" href="./styles.css?v=5" />
+    <script src="./legal-language.js?v=1" defer></script>
   </head>
   <body>
-    <a class="skip" href="#content">Skip to content</a>
+    <a class="skip" href="#content" data-i18n="m0">Skip to content</a>
     <div class="hairline" aria-hidden="true"></div>
     <header class="site-header">
       <div class="wrap header-inner">
@@ -32,9 +33,9 @@
           <span class="name">Heartsy</span>
         </a>
         <nav class="nav" aria-label="Legal">
-          <a href="./privacy.html" aria-current="page">Privacy</a>
-          <a href="./terms.html">Terms</a>
-          <a href="./support.html">Support</a>
+          <a href="./privacy.html" aria-current="page" data-i18n="m1">Privacy</a>
+          <a href="./terms.html" data-i18n="m2">Terms</a>
+          <a href="./support.html" data-i18n="m3">Support</a>
         </nav>
       </div>
     </header>
@@ -42,15 +43,25 @@
     <main id="content">
       <section class="hero">
         <div class="wrap">
-          <h1>Privacy Policy</h1>
-          <p>
+          <div class="language-control" hidden>
+            <label for="legal-language">Language</label>
+            <select id="legal-language" name="lang">
+              <option value="en" lang="en">English</option>
+              <option value="de" lang="de">Deutsch</option>
+              <option value="es" lang="es">Español</option>
+              <option value="fr" lang="fr">Français</option>
+              <option value="pt-BR" lang="pt-BR">Português (Brasil)</option>
+            </select>
+          </div>
+          <h1 data-i18n="m4">Privacy Policy</h1>
+          <p data-i18n="m5">
             This Privacy Policy explains how Heartsy collects, uses, shares,
             and protects information when you use the Heartsy app and these
             pages.
           </p>
           <div class="meta">
-            <span>Last updated September 11, 2026</span>
-            <span>Contact support@heartsyapp.com</span>
+            <span data-i18n="m6">Last updated September 11, 2026</span>
+            <span data-i18n="m7">Contact support@heartsyapp.com</span>
           </div>
         </div>
       </section>
@@ -58,202 +69,202 @@
       <section class="wrap doc-page">
         <div class="doc">
           <details class="toc toc-mobile">
-            <summary>On this page</summary>
-            <a href="#collect">Information we collect</a>
-            <a href="#use">How we use information</a>
-            <a href="#permissions">Permissions</a>
-            <a href="#share">How we share information</a>
-            <a href="#partners">Third-party services</a>
-            <a href="#retention">Retention and deletion</a>
-            <a href="#rights">Your choices</a>
-            <a href="#children">Children</a>
-            <a href="#security">Security and transfers</a>
-            <a href="#changes">Changes</a>
-            <a href="#contact">Contact</a>
+            <summary data-i18n="m8">On this page</summary>
+            <a href="#collect" data-i18n="m9">Information we collect</a>
+            <a href="#use" data-i18n="m10">How we use information</a>
+            <a href="#permissions" data-i18n="m11">Permissions</a>
+            <a href="#share" data-i18n="m12">How we share information</a>
+            <a href="#partners" data-i18n="m13">Third-party services</a>
+            <a href="#retention" data-i18n="m14">Retention and deletion</a>
+            <a href="#rights" data-i18n="m15">Your choices</a>
+            <a href="#children" data-i18n="m16">Children</a>
+            <a href="#security" data-i18n="m17">Security and transfers</a>
+            <a href="#changes" data-i18n="m18">Changes</a>
+            <a href="#contact" data-i18n="m19">Contact</a>
           </details>
 
           <aside class="toc toc-desktop" aria-label="On this page">
-            <p>On this page</p>
-            <a href="#collect">Information we collect</a>
-            <a href="#use">How we use information</a>
-            <a href="#permissions">Permissions</a>
-            <a href="#share">How we share information</a>
-            <a href="#partners">Third-party services</a>
-            <a href="#retention">Retention and deletion</a>
-            <a href="#rights">Your choices</a>
-            <a href="#children">Children</a>
-            <a href="#security">Security and transfers</a>
-            <a href="#changes">Changes</a>
-            <a href="#contact">Contact</a>
+            <p data-i18n="m8">On this page</p>
+            <a href="#collect" data-i18n="m9">Information we collect</a>
+            <a href="#use" data-i18n="m10">How we use information</a>
+            <a href="#permissions" data-i18n="m11">Permissions</a>
+            <a href="#share" data-i18n="m12">How we share information</a>
+            <a href="#partners" data-i18n="m13">Third-party services</a>
+            <a href="#retention" data-i18n="m14">Retention and deletion</a>
+            <a href="#rights" data-i18n="m15">Your choices</a>
+            <a href="#children" data-i18n="m16">Children</a>
+            <a href="#security" data-i18n="m17">Security and transfers</a>
+            <a href="#changes" data-i18n="m18">Changes</a>
+            <a href="#contact" data-i18n="m19">Contact</a>
           </aside>
 
           <article class="prose">
-            <p>
+            <p data-i18n="m20">
               By using Heartsy, you agree to this Privacy Policy. If you do
               not agree, please do not use the app. English is the governing
               language of this policy.
             </p>
 
-            <h2 id="collect">Information we collect</h2>
-            <h3>Information you provide</h3>
+            <h2 id="collect" data-i18n="m9">Information we collect</h2>
+            <h3 data-i18n="m21">Information you provide</h3>
             <ul>
-              <li>
+              <li data-i18n="m22">
                 Account details, such as an email address when you sign in
                 with email
               </li>
-              <li>
+              <li data-i18n="m23">
                 Sign in with Apple details that Apple shares with us, which
                 may include a name, email address, or a private relay email
               </li>
-              <li>
+              <li data-i18n="m24">
                 Profile details, such as nickname, birthday, gender, and
                 profile photo
               </li>
-              <li>
+              <li data-i18n="m25">
                 Couple invite codes, and the choice to accept, decline, or
                 end a pairing
               </li>
-              <li>
+              <li data-i18n="m26">
                 Notes, chat messages, and moments you create, including a
                 photo you attach to a chat or moment
               </li>
-              <li>
+              <li data-i18n="m27">
                 The date you mark as the start of the relationship
               </li>
-              <li>
+              <li data-i18n="m28">
                 Safety reports and support messages you send to
                 <a href="mailto:support@heartsyapp.com">support@heartsyapp.com</a>
               </li>
             </ul>
 
-            <h3>Information collected automatically</h3>
+            <h3 data-i18n="m29">Information collected automatically</h3>
             <ul>
-              <li>
+              <li data-i18n="m30">
                 Device and app information, such as device model, operating
                 system, app version, language, time zone, and a device
                 identifier used to operate the service
               </li>
-              <li>
+              <li data-i18n="m31">
                 Usage and diagnostics, such as feature events, crash data,
                 and basic performance logs
               </li>
-              <li>Push notification token, if notifications are enabled</li>
-              <li>
+              <li data-i18n="m32">Push notification token, if notifications are enabled</li>
+              <li data-i18n="m33">
                 Approximate network information needed to deliver the service,
                 such as IP address
               </li>
-              <li>
+              <li data-i18n="m34">
                 Install or campaign attribution data used to understand how
                 people find Heartsy
               </li>
             </ul>
 
-            <h3>Information from features you choose</h3>
+            <h3 data-i18n="m35">Information from features you choose</h3>
             <ul>
-              <li>
+              <li data-i18n="m36">
                 A one-time location snapshot, if you attach a place in chat.
                 Heartsy does not live-track your location
               </li>
-              <li>
+              <li data-i18n="m37">
                 Photos you choose for your profile, a chat message, or a
                 moment. Each chat message or moment can include at most one
                 photo
               </li>
-              <li>
+              <li data-i18n="m38">
                 Advertising identifier only after you allow App Tracking
                 Transparency, where required
               </li>
             </ul>
 
-            <h2 id="use">How we use information</h2>
-            <p>We use information to:</p>
+            <h2 id="use" data-i18n="m10">How we use information</h2>
+            <p data-i18n="m39">We use information to:</p>
             <ul>
-              <li>Create, authenticate, and manage your account</li>
-              <li>Let you complete a profile and send or accept a pairing invite</li>
-              <li>
+              <li data-i18n="m40">Create, authenticate, and manage your account</li>
+              <li data-i18n="m41">Let you complete a profile and send or accept a pairing invite</li>
+              <li data-i18n="m42">
                 Run the shared space after pairing: home, notes, chat, and
                 moments
               </li>
-              <li>
+              <li data-i18n="m43">
                 Show both of you avatars, names, days together, a note when
                 one exists, and the latest moment
               </li>
-              <li>Deliver notifications you enable</li>
-              <li>
+              <li data-i18n="m44">Deliver notifications you enable</li>
+              <li data-i18n="m45">
                 Let you unbind the relationship, report a safety issue, or
                 delete your account
               </li>
-              <li>Measure app performance, stability, and marketing attribution</li>
-              <li>Prevent abuse, protect security, and comply with law</li>
-              <li>Respond to support and privacy requests</li>
+              <li data-i18n="m46">Measure app performance, stability, and marketing attribution</li>
+              <li data-i18n="m47">Prevent abuse, protect security, and comply with law</li>
+              <li data-i18n="m48">Respond to support and privacy requests</li>
             </ul>
 
-            <h2 id="permissions">Permissions</h2>
-            <p>Depending on the features you use, Heartsy may ask for:</p>
+            <h2 id="permissions" data-i18n="m11">Permissions</h2>
+            <p data-i18n="m49">Depending on the features you use, Heartsy may ask for:</p>
             <ul>
-              <li>
+              <li data-i18n="m50">
                 Photos or camera, to set a profile photo or attach one photo
                 to a chat message or moment
               </li>
-              <li>
+              <li data-i18n="m51">
                 Location, only to attach a one-time place snapshot in chat
               </li>
-              <li>Notifications, to send pairing and activity alerts</li>
-              <li>Tracking, on iOS, before using an advertising identifier</li>
+              <li data-i18n="m52">Notifications, to send pairing and activity alerts</li>
+              <li data-i18n="m53">Tracking, on iOS, before using an advertising identifier</li>
             </ul>
-            <p>
+            <p data-i18n="m54">
               You can change these permissions in your device settings. If you
               decline a permission, some features may not work.
             </p>
 
-            <h2 id="share">How we share information</h2>
-            <p>We do not sell your personal information.</p>
-            <p>We may share information:</p>
+            <h2 id="share" data-i18n="m12">How we share information</h2>
+            <p data-i18n="m55">We do not sell your personal information.</p>
+            <p data-i18n="m56">We may share information:</p>
             <ul>
-              <li>
+              <li data-i18n="m57">
                 With your paired partner. Before they accept an invite they
                 can see your avatar and nickname. After pairing, notes, chat,
                 moments, and home details in that relationship are visible to
                 both of you. Only one active relationship is allowed at a
                 time
               </li>
-              <li>
+              <li data-i18n="m58">
                 With service providers that help us operate Heartsy, such as
                 hosting, authentication, push delivery, analytics, and
                 attribution
               </li>
-              <li>
+              <li data-i18n="m59">
                 When required by law, legal process, or to protect rights and
                 safety
               </li>
-              <li>
+              <li data-i18n="m60">
                 As part of a merger, acquisition, or similar transfer, if
                 permitted by law
               </li>
             </ul>
 
-            <h2 id="partners">Third-party services</h2>
-            <p>Heartsy uses third-party services, including:</p>
+            <h2 id="partners" data-i18n="m13">Third-party services</h2>
+            <p data-i18n="m61">Heartsy uses third-party services, including:</p>
             <ul>
-              <li>Apple, for Sign in with Apple, push delivery, and App Store</li>
-              <li>Firebase, for analytics and cloud messaging</li>
-              <li>Facebook App Events, for app event measurement</li>
-              <li>Adjust, for install and campaign attribution</li>
-              <li>Our backend, storage, and content-delivery providers</li>
+              <li data-i18n="m62">Apple, for Sign in with Apple, push delivery, and App Store</li>
+              <li data-i18n="m63">Firebase, for analytics and cloud messaging</li>
+              <li data-i18n="m64">Facebook App Events, for app event measurement</li>
+              <li data-i18n="m65">Adjust, for install and campaign attribution</li>
+              <li data-i18n="m66">Our backend, storage, and content-delivery providers</li>
             </ul>
-            <p>
+            <p data-i18n="m67">
               These providers process information under their own privacy
               policies.
             </p>
 
-            <h2 id="retention">Retention and deletion</h2>
-            <p>
+            <h2 id="retention" data-i18n="m14">Retention and deletion</h2>
+            <p data-i18n="m68">
               We keep information for as long as needed to provide Heartsy,
               resolve disputes, enforce our terms, and meet legal or security
               requirements. Ending a pairing closes that shared space; content
               from the old relationship does not move into a new one.
             </p>
-            <p>
+            <p data-i18n="m69">
               You can delete your account in the app from Account. You can
               also request deletion by emailing
               <a href="mailto:support@heartsyapp.com">support@heartsyapp.com</a>
@@ -262,55 +273,55 @@
               Some records may remain in backups for a limited time.
             </p>
 
-            <h2 id="rights">Your choices</h2>
-            <p>Depending on applicable law, you may be able to:</p>
+            <h2 id="rights" data-i18n="m15">Your choices</h2>
+            <p data-i18n="m70">Depending on applicable law, you may be able to:</p>
             <ul>
-              <li>Access or update profile information in the app</li>
-              <li>Delete your account or certain content</li>
-              <li>Turn off permissions in device settings</li>
-              <li>Ask us to correct or export personal information</li>
+              <li data-i18n="m71">Access or update profile information in the app</li>
+              <li data-i18n="m72">Delete your account or certain content</li>
+              <li data-i18n="m73">Turn off permissions in device settings</li>
+              <li data-i18n="m74">Ask us to correct or export personal information</li>
             </ul>
-            <p>
+            <p data-i18n="m75">
               To make a privacy request, email
               <a href="mailto:support@heartsyapp.com">support@heartsyapp.com</a>.
               We may need to verify that you own the account.
             </p>
 
-            <h2 id="children">Children</h2>
-            <p>
+            <h2 id="children" data-i18n="m16">Children</h2>
+            <p data-i18n="m76">
               Heartsy is for people 18 or older. We do not knowingly collect
               personal information from children. If we learn that we have
               collected information from someone under 18, we will delete it.
             </p>
 
-            <h2 id="security">Security and transfers</h2>
-            <p>
+            <h2 id="security" data-i18n="m17">Security and transfers</h2>
+            <p data-i18n="m77">
               We use reasonable administrative and technical measures to
               protect information. No method of transmission or storage is
               completely secure.
             </p>
-            <p>
+            <p data-i18n="m78">
               Our providers may process information in countries other than
               where you live. By using Heartsy, you understand that your
               information may be transferred and stored in those places,
               subject to applicable safeguards.
             </p>
 
-            <h2 id="changes">Changes</h2>
-            <p>
+            <h2 id="changes" data-i18n="m18">Changes</h2>
+            <p data-i18n="m79">
               We may update this Privacy Policy. If we make material changes,
               we may provide notice in the app or on these pages. Continued
               use of Heartsy after an update means you accept the revised
               policy.
             </p>
 
-            <h2 id="contact">Contact</h2>
-            <p>
+            <h2 id="contact" data-i18n="m19">Contact</h2>
+            <p data-i18n="m80">
               Questions about this Privacy Policy can be sent to the Heartsy
               operator at
               <a href="mailto:support@heartsyapp.com">support@heartsyapp.com</a>.
             </p>
-            <p>
+            <p data-i18n="m81">
               More account help is on the
               <a href="./support.html">Support page</a>.
             </p>
@@ -321,10 +332,10 @@
 
     <footer class="site-footer">
       <div class="wrap footer-inner">
-        <p>Heartsy Privacy Policy</p>
+        <p data-i18n="m82">Heartsy Privacy Policy</p>
         <div class="footer-links">
-          <a href="./terms.html">Terms</a>
-          <a href="./support.html">Support</a>
+          <a href="./terms.html" data-i18n="m2">Terms</a>
+          <a href="./support.html" data-i18n="m3">Support</a>
         </div>
       </div>
     </footer>
